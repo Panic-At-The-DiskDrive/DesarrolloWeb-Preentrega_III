@@ -2,7 +2,16 @@ node_modules/
 
 .sass-cache/
 
-css/styles.css.map
+css/**/*.css.map
+
+dist/
+build/
+
+.env
+.env.local
+.env.*.local
+
+coverage/
 
 .DS_Store
 
