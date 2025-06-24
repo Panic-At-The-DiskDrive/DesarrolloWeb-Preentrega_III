@@ -1,0 +1,17 @@
+node_modules/
+
+.sass-cache/
+
+css/styles.css.map
+
+.DS_Store
+
+.vscode/
+*.code-workspace
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+*.tmp
+*.temp

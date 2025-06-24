@@ -1,0 +1,18 @@
+@use "sass:color";
+@use "../utils/variables" as vars;
+
+section {
+  p {
+    font-size: 1rem;
+    margin-bottom: vars.$spacer;
+    color: color.adjust(vars.$color-text-footer, $lightness: 30%);
+  }
+}
+
+section {
+  p {
+    font-size: 1rem;
+    margin-bottom: vars.$spacer;
+    color: color.adjust(vars.$color-text-footer, $lightness: 30%);
+  }
+}

@@ -1,0 +1,31 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mix;
+
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding-left: 0;
+    margin: 0;
+
+    li a {
+      color: vars.$color-nav-link;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover,
+      &:focus {
+        color: vars.$color-nav-link-hover;
+        background: rgba(187, 134, 252, 0.25);
+        box-shadow: 0 0 8px vars.$color-primary;
+        outline: none;
+      }
+    }
+  }
+}
+

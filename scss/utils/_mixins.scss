@@ -1,0 +1,17 @@
+@mixin transition($properties...) {
+  transition: $properties 0.3s ease;
+}
+
+@mixin box-shadow($color) {
+  box-shadow: 0 4px 15px rgba($color, 0.6);
+}
+
+@mixin card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover,
+  &:focus-within {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(75, 0, 130, 0.9);
+    outline: none;
+  }
+}

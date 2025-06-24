@@ -1,0 +1,28 @@
+@use "../utils/variables" as vars;
+@use "sass:math";
+
+.noticias-section {
+  margin-top: vars.$spacer * 2;
+  h2 {
+    margin-bottom: math.div(vars.$spacer, 2);
+    color: vars.$color-accent-hover;
+  }
+
+  article {
+    margin-bottom: vars.$spacer * 2;
+
+    h3 {
+      color: vars.$color-primary;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .text-info {
+      font-size: 0.9rem;
+      color: vars.$color-accent;
+    }
+  }
+}
+

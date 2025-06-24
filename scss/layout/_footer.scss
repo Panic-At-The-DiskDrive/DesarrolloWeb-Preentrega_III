@@ -1,0 +1,12 @@
+@use "../utils/variables" as vars;
+
+footer {
+  background-color: vars.$color-header;
+  padding: 1rem 2rem;
+  text-align: center;
+  color: vars.$color-text-footer;
+  font-size: 0.9rem;
+  margin-top: auto;
+  box-shadow: inset 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+

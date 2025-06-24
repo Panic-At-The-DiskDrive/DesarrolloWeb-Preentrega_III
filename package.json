@@ -1,0 +1,16 @@
+{
+  "name": "preentrega3-simonetta",
+  "version": "1.0.0",
+  "description": "Beru Gaming — PreEntrega3+Simonetta",
+  "scripts": {
+  "clean:css": "rm -f css/styles.css",
+  "build:css": "sass --no-source-map scss/main.scss css/styles.css",
+  "watch:css": "sass --watch scss/main.scss:css/styles.css",
+  "dev": "npm run watch:css",
+  "start": "npm run watch:css"
+},
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
+

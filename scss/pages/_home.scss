@@ -1,0 +1,35 @@
+@use "../utils/variables" as vars;
+
+.hero {
+  padding: vars.$spacer * 4 0;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: vars.$spacer;
+    color: vars.$color-accent;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: vars.$spacer * 2;
+  }
+
+  a.btn {
+    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+  }
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: vars.$shadow-banner;
+}
+
+.lead {
+  margin-bottom: vars.$spacer * 2;
+  color: vars.$color-accent;
+}
+

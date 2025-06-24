@@ -1,0 +1,28 @@
+@use "sass:color";
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
+
+form {
+  background-color: color.scale(vars.$color-bg, $lightness: -5%);
+  padding: vars.$spacer;
+  border-radius: 8px;
+
+  input,
+  textarea {
+    @include mixins.transition(border-color);
+    &:focus {
+      border-color: vars.$color-primary;
+      box-shadow: 0 0 5px vars.$color-primary;
+      outline: none;
+    }
+  }
+
+  button {
+    @include mixins.transition(background-color);
+    &:hover {
+      background-color: vars.$color-primary;
+      color: vars.$color-bg;
+    }
+  }
+}
+

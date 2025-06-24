@@ -1,0 +1,11 @@
+@use "../utils/variables" as vars;
+
+h2 {
+  color: vars.$color-primary;
+  text-shadow: 0 0 6px vars.$color-primary;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
